@@ -1,6 +1,5 @@
 import React from "react";
 
-/* Simple helper */
 const SectionTitle = ({ label }) => (
   <h2 className="text-3xl sm:text-4xl font-bold text-slate-100 tracking-tight mb-8 text-center">
     {label}
@@ -127,14 +126,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
-      {/* Background glow */}
+     
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-32 -left-24 h-72 w-72 rounded-full bg-violet-600/30 blur-3xl" />
         <div className="absolute top-40 -right-10 h-72 w-72 rounded-full bg-cyan-500/25 blur-3xl" />
         <div className="absolute bottom-0 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-emerald-500/10 blur-3xl" />
       </div>
 
-      {/* Navbar */}
+     
       <header className="sticky top-0 z-20 border-b border-slate-800/60 bg-slate-950/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="text-lg font-semibold tracking-tight">
@@ -153,10 +152,10 @@ function App() {
         </nav>
       </header>
 
-      {/* Main */}
+   
       <main className="mx-auto max-w-6xl px-4 sm:px-6">
 
-        {/* ABOUT */}
+        
         <section id="about" className="flex flex-col gap-10 py-16 sm:flex-row sm:items-center sm:py-24">
           <div className="flex-1 space-y-6">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
@@ -184,7 +183,7 @@ function App() {
             </div>
           </div>
 
-          {/* Avatar */}
+         
           <div className="flex-1">
             <div className="mx-auto h-40 w-40 rounded-3xl border border-slate-700/70 bg-slate-900/60 p-1 shadow-xl sm:h-48 sm:w-48">
               <div className="flex h-full w-full flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -198,7 +197,7 @@ function App() {
           </div>
         </section>
 
-        {/* ⭐ EDUCATION (moved above skills) */}
+    
         <section id="education" className="py-16 sm:py-20">
           <SectionTitle label="Education" />
           <div className="space-y-5">
@@ -219,7 +218,7 @@ function App() {
           </div>
         </section>
 
-        {/* SKILLS */}
+        
         <section id="skills" className="py-16 sm:py-20">
           <SectionTitle label="Skills & Tech Stack" />
           <div className="grid gap-8 md:grid-cols-2">
@@ -236,7 +235,7 @@ function App() {
           </div>
         </section>
 
-        {/* PROJECTS */}
+      
         <section id="projects" className="py-16 sm:py-20">
           <SectionTitle label="Projects" />
           <div className="grid gap-8 lg:grid-cols-3">
@@ -259,12 +258,12 @@ function App() {
           </div>
         </section>
 
-        {/* ACHIEVEMENTS + CODING PROFILES */}
+      
         <section id="achievements" className="py-16 sm:py-20">
           <SectionTitle label="Achievements & Coding Profiles" />
           <div className="grid gap-8 lg:grid-cols-2">
 
-            {/* Achievements */}
+        
             <div className="rounded-2xl border border-slate-800/70 bg-slate-900/70 p-6">
               <h3 className="mb-3 text-sm font-semibold uppercase text-slate-400">Achievements</h3>
               <ul className="space-y-2 text-sm text-slate-200">
@@ -277,7 +276,7 @@ function App() {
               </ul>
             </div>
 
-            {/* Coding Profiles */}
+           
             <div className="rounded-2xl border border-slate-800/70 bg-slate-900/70 p-6">
               <h3 className="mb-3 text-sm font-semibold uppercase text-slate-400">Coding Profiles</h3>
               
@@ -300,7 +299,6 @@ function App() {
           </div>
         </section>
 
-        {/* CONTACT */}
         <section id="contact" className="py-16 sm:py-20">
           <SectionTitle label="Contact" />
           <div className="mx-auto max-w-xl text-center space-y-3 text-sm">
@@ -330,7 +328,7 @@ function App() {
 
       </main>
 
-      {/* Footer */}
+   
       <footer className="border-t border-slate-800/70 bg-slate-950 py-5">
         <p className="text-center text-xs text-slate-500">
           © {new Date().getFullYear()} Aman Kumar Diwakar · Portfolio built with React + Tailwind CSS
